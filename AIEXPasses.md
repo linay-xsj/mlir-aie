@@ -35,6 +35,7 @@ _Generate physical lock ops from logical lock (token) ops_
 Tokens represent high-level buffer synchronization through a sequence of
 pipeline stages.  This pass lowers token operations into physical aie.lock
 operations.
+### `-aie-dma-to-ipu`
 ### `-aie-herd-routing`
 
 _Lowering herds with place and route ops to AIE cores, mems, and switchboxes_
@@ -60,3 +61,9 @@ _Lower AIE.multicast operation to AIE.flow operations_
 This pass replaces AIE.multicast operation with the equivalent number of AIE.flow
 operations. The lowered AIE.flow operations have the same source port but different
 destinations.
+### `-aiex-standard-lowering`
+
+_Lower AIEX operations_
+
+AIEX Ipu Ops are removed.
+
